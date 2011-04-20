@@ -29,3 +29,17 @@ header a:hover, header a:active {
     color:white;
     text-decoration:underline;
 }
+
+#content {
+    width:780px;
+    margin:0 auto;
+    padding-top:15px;
+}
+#content h1 {
+    margin:20px 0;
+    font-size:1.6em;
+}
+#content p {
+    margin: 15px 0;
+    font-size:1.2em;
+}
