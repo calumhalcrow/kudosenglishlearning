@@ -1,4 +1,4 @@
-application: helloworld
+application: kudosenglishlearning
 version: 1
 runtime: python
 api_version: 1
@@ -10,5 +10,8 @@ handlers:
   static_dir: html5-boilerplate
 - url: /i
   static_dir: i
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
 - url: /.*
   script: main.py
