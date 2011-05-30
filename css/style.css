@@ -39,6 +39,9 @@ header a:hover, header a:active {
     margin:20px 0;
     font-size:1.6em;
 }
+#content h2 {
+    font-size:1.3em;
+}
 #content p {
     margin: 15px 0;
     font-size:1.2em;
