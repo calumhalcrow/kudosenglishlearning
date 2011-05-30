@@ -7,7 +7,7 @@ header .wrapper {
     margin:0 auto;
     padding-top:20px;
 }
-header h1 {
+header #masthead {
     float:left;
     width:300px;
     height:126px;
