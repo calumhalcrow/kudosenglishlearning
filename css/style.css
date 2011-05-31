@@ -46,3 +46,13 @@ header a:hover, header a:active {
     margin: 15px 0;
     font-size:1.2em;
 }
+body footer {
+    width:780px;
+    margin:25px auto;
+    padding-top:25px;
+    border-top: 1px dashed #666;
+}
+footer p {
+    text-align:center;
+    font-size:1.2em;
+}
