@@ -43,6 +43,10 @@ header nav a:active {
     margin: 15px 0;
     font-size:1.2em;
 }
+#content p.testimonial {
+    font-style:italic;
+}
+
 body footer {
     width:780px;
     margin:25px auto;
