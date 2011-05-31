@@ -15,19 +15,16 @@ header #masthead {
     text-indent:-9999px;
     font-size:1px;
 }
-header p {
-    float:right;
-    font-size:1.8em;
-    color:white;
-    line-height:1.6em;
+header nav {
+    margin-left:350px;
+    font-size:1.2em;
 }
-header a:link, header a:visited {
+header nav a:link,
+header nav a:visited,
+header nav a:hover,
+header nav a:active {
     color:white;
-    text-decoration:none;
-}
-header a:hover, header a:active {
-    color:white;
-    text-decoration:underline;
+    display:block;
 }
 
 #content {
