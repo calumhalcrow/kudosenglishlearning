@@ -52,15 +52,15 @@ header nav a:active {
 }
 #intro h2 {
     float:left;
-    width:400px;
+    width:420px;
     margin:25px 0;
     color:white;
-    font-size:1.4em;
+    font-size:1.45em;
     font-weight:normal;
 }
 #intro p {
     float:left;
-    width:400px;
+    width:420px;
     color:white;
 }
 #intro img {
@@ -74,17 +74,23 @@ header nav a:active {
     width:780px;
     margin:0 auto;
     padding-top:15px;
+    line-height:1.8em;
+    font-size:1.2em;
 }
 #content h1 {
     margin:20px 0;
-    font-size:1.6em;
+    font-size:1.5em;
 }
 #content h2 {
+    margin:15px 0;
     font-size:1.3em;
+}
+#content h3 {
+    margin:10px 0;
+    font-size:1.1em;
 }
 #content p {
     margin: 15px 0;
-    font-size:1.2em;
 }
 #content p.testimonial {
     font-style:italic;
