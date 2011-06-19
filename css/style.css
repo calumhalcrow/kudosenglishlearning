@@ -36,6 +36,9 @@ header nav a:visited {
 }
 header nav a:hover,
 header nav a:active {
+    text-decoration:underline;
+}
+header nav a.current {
     color:#01b1ec;
 }
 

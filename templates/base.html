@@ -26,12 +26,9 @@
         <header>
             <a id="masthead" href="/">Kudos English Learning</a>
             <nav>
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/trainers-profile">Trainer's&nbsp;Profile</a>
-                <a href="/training-programmes">Training&nbsp;Programmes</a>
-                <a href="/photos">Photos</a>
-                <a href="/testimonials">Testimonials</a>
+                {% for key, value in nav.items %}
+                <a {% ifequal key current %}class="current" {% endifequal %}href="/{{ key }}">{{ value }}</a>
+                {% endfor %}
             </nav>
         </header>
 
