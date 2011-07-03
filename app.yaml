@@ -10,6 +10,8 @@ handlers:
   static_dir: html5-boilerplate
 - url: /i
   static_dir: i
+- url: /js
+  static_dir: js
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
