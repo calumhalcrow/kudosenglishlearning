@@ -27,11 +27,7 @@
         <a name="top"></a>
         <header>
             <a id="masthead" href="/">Kudos English Learning</a>
-            <nav>
-                {% for key, value in nav.items %}
-                <a {% ifequal key current %}class="current" {% endifequal %}href="/{{ key }}">{{ value }}</a>
-                {% endfor %}
-            </nav>
+            {% include "nav.html" %}
         </header>
 
         <div id="intro">
@@ -48,6 +44,7 @@
         </div>
 
         <footer>
+            {% include "nav.html" %}
             <a name="contact"></a>
             <p><strong>Contact Details</strong>: Emiliza Ahmad | +60173708774 | <a href="mailto:emi@kudosenglishlearning.com">emi@kudosenglishlearning.com</a></p>
         </footer>
