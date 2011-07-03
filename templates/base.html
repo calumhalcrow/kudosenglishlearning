@@ -46,7 +46,28 @@
         <footer>
             {% include "nav.html" %}
             <a name="contact"></a>
-            <p><strong>Contact Details</strong>: Emiliza Ahmad | +60173708774 | <a href="mailto:emi@kudosenglishlearning.com">emi@kudosenglishlearning.com</a></p>
+            <p><strong>Contact</strong> us by phone +60173708774, email <a href="mailto:emi@kudosenglishlearning.com">emi@kudosenglishlearning.com</a> or by filling out our <a href="#" id="show-contact">contact form</a>.
+            <form id="contact-form" action="/contact">
+            <fieldset>
+                <legend>Contact Kudos</legend>
+                <p>If you'd like to give us more specific information about what type of service you'd like, our contact form provides fields to help you do so:</p>
+                <div class="first">
+                    <label for="name">Your name:</label>
+                    <input type="text" name="name" id="name"/>
+                    <label for="email">Your email (kept private):</label>
+                    <input type="text" name="email" id="email"/>
+                    <label for="courses">What courses are you interested in?</label>
+                    <textarea id="courses" name="courses"></textarea>
+                </div>
+                <div>
+                    <label for="message">Your message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <input type="submit" id="submit" value="Get in touch!"/>
+                </div>
+                <p><a href="#" id="hide-contact">X</a></p>
+            </fieldset>
+            </form>
+            <p id="copyright">&copy; 2011 Emiliza Ahmad, Kudos English Learning.</p>
         </footer>
     </body>
 </html>

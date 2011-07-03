@@ -1,7 +1,7 @@
 $(function() {
     var contact_form = $('#contact-form');
 
-    // contact_form.hide();
+    contact_form.hide();
 
     $('#show-contact').click( function() {
         contact_form.show('slow');

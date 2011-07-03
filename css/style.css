@@ -109,12 +109,70 @@ img#emi {
 }
 
 body footer {
-    width:780px;
+    width:580px;
     margin:25px auto;
-    padding-top:25px;
+    padding:25px 100px 0;
     border-top: 1px dashed #666;
 }
-footer p {
+footer nav {
+    margin-top:20px;
     text-align:center;
-    font-size:1.2em;
+}
+footer nav a {
+    padding-left:10px;
+}
+footer p {
+    margin:20px 0;
+}
+
+footer fieldset {
+    border:1px solid #ccc;
+    border-radius:5px;
+    padding:15px;
+}
+footer legend {
+    padding:0 3px;
+}
+footer form {
+    position:relative;
+}
+footer #hide-contact {
+    position:absolute;
+    top:9px;
+    right:5px;
+    text-decoration:none;
+}
+footer form div {
+    float:right;
+    width:265px;
+}
+footer form div.first {
+    float:left;
+    padding-right:10px;
+}
+footer input {
+    width:265px;
+    border:1px solid #ccc;
+}
+footer label {
+    width:265px;
+    display:block;
+    padding-top:10px;
+}
+footer textarea#courses {
+    height:100px;
+}
+footer textarea#message {
+    height:160px;
+}
+footer input#submit {
+    width:150px;
+    position:absolute;
+    bottom:15px;
+    right:15px;
+}
+
+footer #copyright {
+    margin-top:20px;
+    text-align:center;
 }
