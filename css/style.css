@@ -109,9 +109,9 @@ img#emi {
 }
 
 body footer {
-    width:580px;
+    width:740px;
     margin:25px auto;
-    padding:25px 100px 0;
+    padding:25px 20px 0;
     border-top: 1px dashed #666;
 }
 footer nav {
@@ -128,7 +128,7 @@ footer p {
 footer fieldset {
     border:1px solid #ccc;
     border-radius:5px;
-    padding:15px;
+    padding:20px;
 }
 footer legend {
     padding:0 3px;
@@ -144,25 +144,29 @@ footer #hide-contact {
 }
 footer form div {
     float:right;
-    width:265px;
+    width:335px;
 }
 footer form div.first {
     float:left;
     padding-right:10px;
 }
-footer input {
-    width:265px;
+footer input[type=text] {
+    width:335px;
     border:1px solid #ccc;
 }
 footer label {
-    width:265px;
+    width:335px;
     display:block;
     padding-top:10px;
 }
 footer textarea#courses {
+    border:1px solid #ccc;
+    width:335px;
     height:100px;
 }
 footer textarea#message {
+    border:1px solid #ccc;
+    width:335px;
     height:160px;
 }
 footer input#submit {
