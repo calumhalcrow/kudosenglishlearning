@@ -4,12 +4,15 @@ $(function() {
     contact_form.hide();
 
     $('#show-contact').click( function() {
-        contact_form.show('slow');
+        $.scrollTo('100%');
+        contact_form.show(500, function() {
+            $.scrollTo('100%');
+        });
         return false;
     });
 
     $('#hide-contact').click( function() {
-        contact_form.hide('slow');
+        contact_form.hide(1000);
         return false;
     });
 });
