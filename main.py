@@ -5,8 +5,9 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 from google.appengine.dist import use_library
 use_library('django', '1.2')
 from google.appengine.ext.webapp import template
+from google.appengine.api import mail
 
-class BrowseHandler(webapp.RequestHandler):
+class PageHandler(webapp.RequestHandler):
     def get(self, page_name):
         nav = {
                 '': 'Home',
@@ -21,8 +22,28 @@ class BrowseHandler(webapp.RequestHandler):
         self.response.out.write(
             template.render(path, {'current': page_name, 'nav': nav }))
 
+class ContactHandler(webapp.RequestHandler):
+    def post(self):
+        name = self.request.get('name')
+        email = self.request.get('email')
+        courses = self.request.get('courses')
+        message = self.request.get('message')
+
+        if (name == '' or email == '' or message == ''):
+            self.response.out.write('error')
+        else:
+            mail.send_mail(
+                sender=email,
+                to="Calum Halcrow <calumhalcrow@gmail.com>",
+                subject="Message from KEL contact form.",
+                body='Message:\n'+message+
+                     '\n\nInterested in courses:\n'+courses+
+                     '\n\n'+name)
+            self.response.out.write('success')
+
 application = webapp.WSGIApplication(
-    [(r'^/(.*)/?$', BrowseHandler)],
+    [('/contact', ContactHandler),
+     (r'^/(.*)/?$', PageHandler)],
     debug=True)
 
 def main():
