@@ -83,6 +83,7 @@ function highlight_empty_required_fields(form) {
                 .text('Some required fields have not been completed.')
             )
         }
+        $.scrollTo('100%');
         return true;
     }
     return false;
