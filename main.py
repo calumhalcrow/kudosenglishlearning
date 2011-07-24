@@ -26,18 +26,18 @@ class ContactHandler(webapp.RequestHandler):
     def post(self):
         name = self.request.get('name')
         email = self.request.get('email')
-        courses = self.request.get('courses')
+        courses = self.request.get('courses') or '<not specified>'
         message = self.request.get('message')
 
         if (name == '' or email == '' or message == ''):
             self.response.out.write('error')
         else:
             mail.send_mail(
-                sender=email,
-                to="Calum Halcrow <calumhalcrow@gmail.com>",
-                subject="Message from KEL contact form.",
+                sender=name+' <'+email+'>',
+                to="Emiliza Ahmad <emi@kudosenglishlearning.com>",
+                subject="Message from KudosEnglishLearning.com",
                 body='Message:\n'+message+
-                     '\n\nInterested in courses:\n'+courses+
+                     '\n\nCourses interested in:\n'+courses+
                      '\n\n'+name)
             self.response.out.write('success')
 
