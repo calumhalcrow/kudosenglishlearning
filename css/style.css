@@ -19,18 +19,17 @@ header #masthead {
     font-size:1px;
 }
 header nav {
-    margin-left:350px;
+    margin-left:480px;
     padding-top:10px;
     font-size:1.2em;
 }
 header nav a:link,
 header nav a:visited {
-    width:200px;
+    min-width:115px;
     float:left;
     text-transform:uppercase;
     text-decoration:none;
     color:#444;
-    letter-spacing:2px;
     font-size:0.8em;
     line-height:2em;
 }
@@ -88,7 +87,7 @@ header nav a.current {
 }
 #content h1 {
     margin:20px 0;
-    font-size:1.5em;
+    font-size:1.4em;
 }
 #content h2 {
     margin:15px 0;
@@ -109,12 +108,26 @@ header nav a.current {
     margin:20px auto;
     border:1px solid #444;
 }
+#content #welcome {
+    width:460px;
+    float:left;
+}
+#content #side-col {
+    width:300px;
+    float:right;
+    margin-top:20px;
+}
+
 img#emi {
     float:right;
     margin:8px 0 0 8px;
 }
 
+#back-to-top {
+    clear:both;
+}
 body footer {
+    clear:both;
     width:740px;
     margin:25px auto;
     padding:25px 20px 0;
