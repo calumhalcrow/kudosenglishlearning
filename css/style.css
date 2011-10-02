@@ -6,17 +6,28 @@
 
 body header {
     width:780px;
-    height:100px;
+    height:110px;
     margin:0 auto;
 }
 header #masthead {
+    font-family:"Oswald", sans-serif;
     float:left;
-    margin-top:8px;
-    width:220px;
-    height:76px;
-    background:url('/i/logo.png') no-repeat 0 0;
-    text-indent:-9999px;
-    font-size:1px;
+    margin-top:4px;
+    width:215px;
+    height:96px;
+    background:url('/i/logo.png') no-repeat 100% 50%;
+}
+header #masthead a {
+    color:black;
+    text-decoration:none;
+    font-size:4em;
+    text-transform:uppercase;
+}
+header #masthead a.secondary {
+    font-size:1.5em;
+    display:block;
+    margin:0 0 0 10px;
+    text-transform:capitalize;
 }
 header nav {
     margin-left:480px;
@@ -87,7 +98,8 @@ header nav a.current {
 }
 #content h1 {
     margin:20px 0;
-    font-size:1.4em;
+    font-size:1.6em;
+    font-family:'Oswald', sans-serif;
 }
 #content h2 {
     margin:15px 0;
