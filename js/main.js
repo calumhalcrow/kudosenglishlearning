@@ -2,7 +2,7 @@ $(function() {
     var contact_form = $('#contact-form').hide();
     $('#throbber').hide();
 
-    $('#show-contact').click( function() {
+    $('#show-contact, a[href*="#contact"]').click( function() {
         $.scrollTo('100%');
         contact_form.show(500, function() {
             $.scrollTo('100%');
