@@ -14,7 +14,7 @@ class PageHandler(webapp.RequestHandler):
                 'about': 'About',
                 'trainers-profile': "Trainer's Profile",
                 'training-programmes': 'Training Programmes',
-                'photos': 'Photos',
+                'clients': 'Clients',
                 'testimonials': 'Testimonials',
         }
         template_name = 'templates/'+page_name+'.html' if page_name else 'templates/index.html'
