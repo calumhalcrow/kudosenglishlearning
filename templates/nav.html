@@ -1,5 +1,0 @@
-<nav>
-    {% for key, value in nav.items %}
-    <a {% ifequal key current %}class="current" {% endifequal %}href="/{{ key }}">{{ value }}</a>
-    {% endfor %}
-</nav>
